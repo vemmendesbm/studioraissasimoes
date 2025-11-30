@@ -2,88 +2,104 @@
 <html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
-  <title>Portfólio - Studio Raissa Simões</title>
+  <title>Studio Raissa Simões</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
       font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       margin: 0;
       padding: 0;
-      line-height: 1.6;
-      background: #fafafa;
+      background: #faf7fb;
+      color: #333;
     }
     header {
       padding: 40px 20px;
       text-align: center;
+      background: #ffffff;
+      border-bottom: 1px solid #eee;
     }
     main {
-      max-width: 800px;
+      max-width: 1000px;
       margin: 0 auto;
-      padding: 0 20px 40px;
-      background: #ffffff;
-      border-radius: 12px;
-      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      padding: 20px;
     }
     h1, h2 {
-      color: #333;
+      color: #8c4fa8;
+      font-weight: 700;
+    }
+    .section-box {
+      background: #ffffff;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.05);
+      margin-bottom: 30px;
     }
     .btn {
       display: inline-block;
       padding: 12px 20px;
       border-radius: 6px;
       text-decoration: none;
-      border: 1px solid #d4a1d7;
-      background: #f7e9fa;
-      margin: 8px 4px;
-      font-size: 15px;
-      color: #8e509c;
+      background: #f3d8fa;
+      color: #8c4fa8;
+      border: 1px solid #d3a6df;
       font-weight: 600;
+      margin-top: 10px;
       transition: 0.2s;
     }
     .btn:hover {
       filter: brightness(0.9);
     }
-    section {
-      margin-top: 30px;
-    }
-    ul li {
-      margin: 5px 0;
+    iframe {
+      width: 100%;
+      height: 90vh;
+      border: none;
+      border-radius: 12px;
     }
   </style>
 </head>
 <body>
+
   <header>
     <h1>Studio Raissa Simões</h1>
-    <p>Especialista em extensão de cílios, design de sobrancelhas e cuidados de beleza.</p>
+    <p>Especialista em extensão de cílios, design de sobrancelhas e procedimentos estéticos.</p>
   </header>
 
   <main>
-    <section>
-      <h2>Portfólio Interativo</h2>
-      <p>Acesse o portfólio completo com fotos reais, resultados, estilos de cílios e informações sobre os serviços.</p>
-      <a class="btn" href="https://gamma.app/docs/Raissa-Simoes-9xt6fvisr9awr7x" target="_blank" rel="noopener">
-        👉 Ver portfólio completo
-      </a>
-    </section>
 
-    <section>
-      <h2>Serviços</h2>
+    <!-- Portfólio EMBUTIDO -->
+    <div class="section-box">
+      <h2>Portfólio Interativo</h2>
+      <p>Aqui você pode visualizar todo o portfólio completo, fotos reais e detalhes dos serviços do Studio Raissa Simões:</p>
+
+      <iframe 
+        src="https://gamma.app/docs/Raissa-Simoes-9xt6fvisr9awr7x" 
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <!-- Serviços -->
+    <div class="section-box">
+      <h2>Serviços Oferecidos</h2>
       <ul>
-        <li>Extensão de cílios (Clássico, Volume, Fio a Fio, Híbrido)</li>
-        <li>Manutenção de cílios (15 a 20 dias)</li>
+        <li>Extensão de cílios (Clássico, Volume, Híbrido e Fio a Fio)</li>
+        <li>Manutenção de cílios (recomendado entre 15 a 20 dias)</li>
         <li>Design de sobrancelhas</li>
         <li>Lash Lifting</li>
         <li>Henna</li>
       </ul>
-    </section>
+    </div>
 
-    <section>
+    <!-- Contato -->
+    <div class="section-box">
       <h2>Contato</h2>
       <p>
-        WhatsApp: <a href="https://wa.me/553899824713" target="_blank">Cli5que aqui para agendar</a><br>
-        Instagram: <a href="#" target="_blank">@studioraissasimoess</a><br>
+        WhatsApp: <a class="btn" href="https://wa.me/55DDDNUMERO" target="_blank">Agendar pelo WhatsApp</a><br><br>
+        Instagram: <a class="btn" href="#" target="_blank">Instagram do Studio</a><br><br>
+        Endereço: Adicione aqui, se quiser.
       </p>
-    </section>
+    </div>
+
   </main>
+
 </body>
 </html>
